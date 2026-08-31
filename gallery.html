@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Work | Casey Engineered Maintenance Systems</title>
+<meta name="description" content="Recent tiling, plumbing, paving, glazing and renovation work by Casey Engineered Maintenance Systems — Randburg and surrounds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+</head>
+<body>
+
+<div class="dimline dimline--top" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Casey Engineered Maintenance Systems" class="brand__logo">
+    </a>
+    <nav class="nav" id="nav">
+      <a href="index.html#services">Services</a>
+      <a href="gallery.html" class="nav--active">Our work</a>
+      <a href="index.html#process">How it works</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a class="tel" href="tel:+27822963168">082 296 3168</a>
+      <a class="btn btn--copper" href="index.html#contact">Get a quote</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- GALLERY HERO -->
+  <section class="gallery-hero">
+    <div class="wrap">
+      <p class="eyebrow">Site records</p>
+      <h1>Our work, on site.</h1>
+      <p class="hero-lead hero-lead--dark">Photos straight from active jobs — tiling, plumbing, paving, glazing and renovation work across Randburg and surrounds.</p>
+    </div>
+  </section>
+
+  <!-- FILTERS -->
+  <section class="gallery-section">
+    <div class="wrap">
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn is-active" data-filter="all">All work</button>
+        <button class="filter-btn" data-filter="glazing">Doors &amp; Glazing</button>
+        <button class="filter-btn" data-filter="paving">Paving</button>
+        <button class="filter-btn" data-filter="plumbing">Plumbing</button>
+        <button class="filter-btn" data-filter="carpentry">Carpentry &amp; Roofing</button>
+        <button class="filter-btn" data-filter="interior">Interior Finishes</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- populated by js/gallery.js -->
+      </div>
+
+      <p class="gallery-note">More photos are added from site as jobs progress — check back for the latest work.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Close">&times;</button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
+  <img class="lightbox__img" id="lightboxImg" src="" alt="">
+  <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next image">&#8250;</button>
+  <p class="lightbox__caption" id="lightboxCaption"></p>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="brand brand--footer">
+      <img src="assets/logo.png" alt="Casey Engineered Maintenance Systems" class="brand__logo brand__logo--footer">
+    </div>
+    <p class="footer-meta">Reg. Nr. 2022/267815/07 · Randburg, Gauteng · © <span id="year"></span> Casey Engineered Maintenance Systems</p>
+    <p class="footer-credit">Site by <a href="https://github.com/" target="_blank" rel="noopener">BornStar Technology</a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/gallery.js"></script>
+</body>
+</html>
